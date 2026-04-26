@@ -13,7 +13,7 @@ http://www.orkidees.com/IF08/roti-lieu
 
 ## Project structure
 
-```
+'''
 recipe-webapp/
 ├── index.html          ← main page, entire UI
 ├── README.md           ← documentation
@@ -26,7 +26,7 @@ recipe-webapp/
 └── data/
     ├── recipe.json     ← title, description, steps
     └── products.json   ← barcodes + nutriscore per ingredient
-```
+'''
 
 ## How to run locally
 No build step needed. Open index.html directly in your browser,

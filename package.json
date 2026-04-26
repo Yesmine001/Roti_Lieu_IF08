@@ -1,0 +1,8 @@
+{
+  "name": "roti-lieu",
+  "version": "1.0.0",
+  "description": "Responsive recipe page using Bootstrap and OpenFoodFacts API",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

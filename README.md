@@ -12,7 +12,10 @@ http://www.orkidees.com/IF08/roti-lieu
 - OpenFoodFacts API v2
 
 ## Project structure
-├── index.html          ← main page - the entire UI
+
+```
+recipe-webapp/
+├── index.html          ← main page, entire UI
 ├── README.md           ← documentation
 ├── .gitignore          ← what Git ignores
 ├── package.json        ← optional, just for npm start
@@ -23,7 +26,7 @@ http://www.orkidees.com/IF08/roti-lieu
 └── data/
     ├── recipe.json     ← title, description, steps
     └── products.json   ← barcodes + nutriscore per ingredient
-
+```
 
 ## How to run locally
 No build step needed. Open index.html directly in your browser,

@@ -13,20 +13,10 @@ http://www.orkidees.com/IF08/roti-lieu
 
 ## Project structure
 
-'''
-recipe-webapp/
-├── index.html          ← main page, entire UI
-├── README.md           ← documentation
-├── .gitignore          ← what Git ignores
-├── package.json        ← optional, just for npm start
-├── css/
-│   └── style.css       ← custom styles on top of Bootstrap
-├── js/
-│   └── main.js         ← all JavaScript logic
-└── data/
-    ├── recipe.json     ← title, description, steps
-    └── products.json   ← barcodes + nutriscore per ingredient
-'''
+- `index.html` – main UI
+- `css/style.css` – styling
+- `js/main.js` – Javascript logic
+- `data/` – JSON data files (titles, steps, barcodes)
 
 ## How to run locally
 No build step needed. Open index.html directly in your browser,

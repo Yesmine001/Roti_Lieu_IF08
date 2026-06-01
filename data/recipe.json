@@ -1,0 +1,21 @@
+{
+  "name": "Rôti de Lieu",
+  "ingredients": [
+    "lieu",
+    "huile d'olive",
+    "citron",
+    "ail",
+    "persil",
+    "sel",
+    "poivre"
+  ],
+  "steps": [
+    "Préchauffer le four à 200°C",
+    "Nettoyer le poisson et le placer sur une plaque",
+    "Arroser d'huile d'olive et de jus de citron",
+    "Ajouter l'ail émincé et le persil",
+    "Assaisonner avec sel et poivre",
+    "Enfourner pour 25-30 minutes",
+    "Servir chaud"
+  ]
+}

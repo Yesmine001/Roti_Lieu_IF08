@@ -1,0 +1,30 @@
+[
+  {
+    "name": "lieu",
+    "nutriscore": "A"
+  },
+  {
+    "name": "huile d'olive",
+    "nutriscore": "B"
+  },
+  {
+    "name": "citron",
+    "nutriscore": "A"
+  },
+  {
+    "name": "ail",
+    "nutriscore": "A"
+  },
+  {
+    "name": "persil",
+    "nutriscore": "A"
+  },
+  {
+    "name": "sel",
+    "nutriscore": "D"
+  },
+  {
+    "name": "poivre",
+    "nutriscore": "B"
+  }
+]

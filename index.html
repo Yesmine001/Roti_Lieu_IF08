@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -14,55 +15,49 @@
 
     <style>
         :root {
-            --ocean-dark:  #0d3d52;
-            --ocean-mid:   #1a6b8a;
+            --ocean-dark: #0d3d52;
+            --ocean-mid: #1a6b8a;
             --ocean-light: #e0f4f8;
-            --ocean-accent:#2eabd1;
+            --ocean-accent: #2eabd1;
         }
 
         body {
             background-color: #f4fbfd;
         }
 
-        /* Navbar */
         .navbar-custom {
             background: linear-gradient(90deg, var(--ocean-dark), var(--ocean-mid));
         }
 
-        /* Header */
         .hero-custom {
             background: linear-gradient(135deg, var(--ocean-light) 0%, #c8eaf3 100%);
             border-bottom: 3px solid var(--ocean-accent);
         }
 
-        /* Titres de section */
         .section-title {
             color: var(--ocean-dark);
             border-bottom: 3px solid var(--ocean-accent);
         }
 
-        /* Séparateur */
         .custom-hr {
             border: none;
             height: 2px;
             background: linear-gradient(90deg, var(--ocean-accent), transparent);
         }
 
-        /* Footer */
         .footer-custom {
             background: linear-gradient(90deg, var(--ocean-dark), var(--ocean-mid));
         }
 
-        /* Titre hero */
         .hero-title {
             color: var(--ocean-dark);
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
         }
 
-        /* Lien footer */
         .footer-link {
             color: var(--ocean-accent) !important;
         }
+
         .footer-link:hover {
             color: #fff !important;
         }
@@ -71,14 +66,17 @@
 
 <body>
 
-    <!-- ============================== NAVBAR ============================== -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold fs-5" href="#">🐟 Rôti de Lieu</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto gap-2">
                     <li class="nav-item">
@@ -95,82 +93,247 @@
         </div>
     </nav>
 
-    <!-- ============================== HEADER / HERO ============================== -->
+    <!-- HERO -->
     <header id="hero" class="hero-custom py-5">
         <div class="container text-center">
 
-            <p class="text-uppercase fw-semibold mb-1" style="color: var(--ocean-accent); letter-spacing: 3px; font-size: 0.85rem;">
+            <p class="text-uppercase fw-semibold mb-1"
+                style="color: var(--ocean-accent); letter-spacing: 3px; font-size: 0.85rem;">
                 Recette du jour
             </p>
 
-            <h1 class="display-3 fw-bold mb-2 hero-title">Rôti de Lieu</h1>
+            <h1 class="display-3 fw-bold mb-2 hero-title">
+                Rôti de Lieu
+            </h1>
 
             <p class="text-muted mb-4" style="font-size: 1.1rem;">
                 Un poisson savoureux, rôti à la perfection avec des herbes fraîches.
             </p>
 
-            <!-- Score nutritionnel moyen (rempli par js/main.js) -->
-            <div id="nutrition-score" class="mb-4"></div>
+            <div id="nutrition-score" class="mb-4">
+                <img id="nutriscore-img"
+                    src=""
+                    alt="Nutri-Score moyen"
+                    style="height:80px; display:none;">
+            </div>
 
-            <!-- Image de la recette -->
             <img
                 src="https://assets.afcdn.com/recipe/20170607/67502_w600.jpg"
                 alt="Image d'un rôti de lieu"
                 class="img-fluid rounded-4 shadow-lg"
-                style="max-height: 420px; object-fit: cover; width: 100%; border: 3px solid var(--ocean-accent);"
-            >
-
+                style="max-height:420px; object-fit:cover; width:100%; border:3px solid var(--ocean-accent);">
         </div>
     </header>
 
-    <!-- ============================== MAIN ============================== -->
+    <!-- MAIN -->
     <main class="container my-5">
 
-        <!-- Section Ingrédients -->
+        <!-- INGREDIENTS -->
         <section id="ingredients" class="mb-5">
             <h2 class="mb-4 pb-2 section-title">🌿 Ingrédients</h2>
-            <div id="productList" class="row g-4">
-                <!-- Rempli dynamiquement par js/main.js -->
-            </div>
+
+            <div id="productList" class="row g-4"></div>
+
+            <div id="product-name"></div>
         </section>
 
         <div class="custom-hr my-5"></div>
 
-        <!-- Section Étapes -->
+        <!-- ETAPES -->
         <section id="etapes" class="mb-5">
             <h2 class="mb-4 pb-2 section-title">👨‍🍳 Étapes de préparation</h2>
+
             <div id="steps" class="list-group list-group-flush">
-                <!-- Rempli dynamiquement par js/main.js -->
+                <!-- À compléter -->
             </div>
         </section>
 
     </main>
 
-    <!-- ============================== FOOTER ============================== -->
+    <!-- FOOTER -->
     <footer class="footer-custom text-light py-4 mt-5">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-2">
+
             <div>
-                <p class="mb-1 fw-bold"><small>Chef de projet : Hélèna CHEVALIER</small></p>
-                <p class="mb-0"><small>Rôti de Lieu &mdash; Projet équipe IF08</small></p>
+                <p class="mb-1 fw-bold">
+                    <small>Chef de projet : Hélèna CHEVALIER</small>
+                </p>
+
+                <p class="mb-0">
+                    <small>Rôti de Lieu — Projet équipe IF08</small>
+                </p>
             </div>
+
             <div class="text-md-end">
                 <p class="mb-0">
                     <small>
-                        <a href="https://www.marmiton.org" class="footer-link text-decoration-none">
+                        <a href="https://www.marmiton.org"
+                            class="footer-link text-decoration-none">
                             Source : Marmiton
                         </a>
                     </small>
                 </p>
             </div>
+
         </div>
     </footer>
 
-    <!-- Bootstrap 5.3 JS -->
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Script principal -->
-    <script src="js/main.js"></script>
+    <script>
+        const FIELDS =
+            "product_name,nutriscore_grade,nutriscore_score,image_front_small_url";
+
+        const nutriscores = [];
+
+        function calculerMoyenne(scores) {
+            if (scores.length === 0) return null;
+
+            return scores.reduce((a, b) => a + b, 0) / scores.length;
+        }
+
+        function scoreToGrade(score) {
+            if (score <= -1) return "A";
+            if (score <= 2) return "B";
+            if (score <= 10) return "C";
+            if (score <= 18) return "D";
+            return "E";
+        }
+
+        function afficherNutriscoreMoyen() {
+            const moyenne = calculerMoyenne(nutriscores);
+
+            if (moyenne === null) return;
+
+            const grade = scoreToGrade(moyenne);
+
+            const img = document.getElementById("nutriscore-img");
+
+            img.src =
+                `https://fr.openfoodfacts.org/images/misc/nutriscore-${grade.toLowerCase()}.png`;
+
+            img.alt = `Nutri-Score moyen ${grade}`;
+            img.style.display = "block";
+        }
+
+        function renderData(product) {
+
+            const {
+                product_name,
+                image_front_small_url,
+                nutriscore_grade,
+                nutriscore_score
+            } = product;
+
+            const grade = nutriscore_grade?.toUpperCase() || "?";
+
+            const col = document.createElement("div");
+
+            col.className = "col-md-6";
+
+            col.innerHTML = `
+                <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex align-items-center gap-3">
+
+                        <img
+                            src="${image_front_small_url || ''}"
+                            alt="${product_name}"
+                            class="img-thumbnail"
+                            style="width:100px">
+
+                        <div>
+                            <h5 class="mb-1">${product_name}</h5>
+
+                            <p class="mb-0 text-muted">
+                                Nutri-Score
+                                <strong>${grade}</strong>
+                                (score : ${nutriscore_score ?? "N/A"})
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            `;
+
+            document.getElementById("productList")
+                .appendChild(col);
+        }
+
+        function loadProduct(barcode) {
+
+            const url =
+                `https://world.openfoodfacts.net/api/v2/product/${barcode}?fields=${FIELDS}`;
+
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}`);
+                    }
+
+                    return response.json();
+                })
+                .then(data => {
+
+                    if (!data.product) return;
+
+                    renderData(data.product);
+
+                    const score = data.product.nutriscore_score;
+
+                    if (typeof score === "number") {
+                        nutriscores.push(score);
+                    }
+
+                    afficherNutriscoreMoyen();
+                })
+                .catch(error => {
+
+                    document.getElementById("product-name").innerHTML =
+                        `<div class="alert alert-danger">${error.message}</div>`;
+                });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            fetch("ingredients.json")
+                .then(response => {
+
+                    if (!response.ok) {
+                        throw new Error(
+                            "Impossible de charger ingredients.json"
+                        );
+                    }
+
+                    return response.json();
+                })
+                .then(data => {
+
+                    if (!data.products || !data.products.length) {
+
+                        document.getElementById("product-name").innerHTML =
+                            `<div class="alert alert-warning">
+                                Aucun produit trouvé.
+                            </div>`;
+
+                        return;
+                    }
+
+                    data.products.forEach(product => {
+                        loadProduct(product.barcode);
+                    });
+                })
+                .catch(error => {
+
+                    document.getElementById("product-name").innerHTML =
+                        `<div class="alert alert-danger">
+                            ${error.message}
+                        </div>`;
+                });
+        });
+    </script>
 
 </body>
 
 </html>
+

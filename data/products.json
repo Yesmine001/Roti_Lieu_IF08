@@ -1,30 +1,27 @@
-[
-  {
-    "name": "lieu",
-    "nutriscore": "A"
-  },
-  {
-    "name": "huile d'olive",
-    "nutriscore": "B"
-  },
-  {
-    "name": "citron",
-    "nutriscore": "A"
-  },
-  {
-    "name": "ail",
-    "nutriscore": "A"
-  },
-  {
-    "name": "persil",
-    "nutriscore": "A"
-  },
-  {
-    "name": "sel",
-    "nutriscore": "D"
-  },
-  {
-    "name": "poivre",
-    "nutriscore": "B"
-  }
-]
+{
+  "products": [
+    
+    { "nom": "Lieu noir (filet)", "barcode": "4056489761167" },
+    
+    { "nom": "Crème fraîche épaisse", "barcode": "3451790439506" },
+    
+    { "nom": "Thyn", "barcode": "5425031753179" },
+    
+    { "nom": "Oseille", "barcode": "3368980120062" },
+    
+    { "nom": "Persil", "barcode": "3166296205509" },
+    
+    { "nom": "Menthe", "barcode": "3564706806245" },
+    
+    { "nom": "Beurre", "barcode": "3155251205500" },
+    
+    { "nom": "Citron", "barcode": "3523680468016" },
+    
+    { "nom": "Sel", "barcode": "5060042641000" },
+    
+    { "nom": "Poivre", "barcode": "3471540080130" },
+    
+    { "nom": "Eau", "barcode": "3274080005003" }
+    
+  ]
+}

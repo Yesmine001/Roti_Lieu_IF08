@@ -3,7 +3,7 @@
 A responsive static web page displaying a recipe of Roti Lieu from marmiton with dynamic nutriscore data pulled from the OpenFoodFacts API.
 
 ## Live site
-http://www.orkidees.com/IF08/roti-lieu
+http://www.orkidees.com/IF08/rotilieu
 
 ## Tech stack
 - HTML5 / CSS3
